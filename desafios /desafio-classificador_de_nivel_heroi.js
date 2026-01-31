@@ -1,9 +1,12 @@
 
-let herois={nome:"Lucas",}
+let herois=[
+    {nome:"Lucas", xp:11000},
+    {nome:"Hiro", xp:3000}
+];
 
-function classicacaoRankHeroi(nome,xp){
+function classificacaoRankHeroi(nome,xp){
     let rank="";
-    if(xp<=1000){
+    if(xp<1000){
         rank="Ferro";
     }else if(xp<=2000){
         rank="Bronze";
@@ -21,5 +24,9 @@ function classicacaoRankHeroi(nome,xp){
         rank="Radiante";
     }
 
-    return `O Herói de nome ${nome} está no Nível de ${rank}`;
+    return `O Heroi de nome ${nome} esta no Nivel de ${rank}`;
+}
+
+for(let i = 0;i<herois.length;i++){
+    console.log(classificacaoRankHeroi(herois[i].nome,herois[i].xp));
 }
