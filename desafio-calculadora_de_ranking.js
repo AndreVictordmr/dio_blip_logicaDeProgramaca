@@ -12,16 +12,14 @@ function calculadoraDeRanking(vitorias){
         rank="Bronze";
     }else if (vitorias<=50) {
         rank="Prata";
-    }else if (vitorias<=70) {
-        rank="Ouro";
     }else if (vitorias<=80) {
-        rank="Platina";
+        rank="Ouro";
     }else if (vitorias<=90) {
-        rank="Ascendente";
+        rank="Diamante";
     } else if(vitorias<=100) {
-       rank="Imortal"; 
+       rank="Lendário"; 
     }else{
-        rank="Radiante";
+        rank="Imortal";
     }
 
     return rank;
