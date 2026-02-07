@@ -1,10 +1,10 @@
 
 let historico=[
-    {nome:"Lucas", xp:11000},
-    {nome:"Hiro", xp:3000}
+    {nome:"XxHITxX", jogos:{v:10,d:40}},
+    {nome:"Olha", jogos:{v:69,d:60}}
 ];
 
-function calculadoraDeRanking(nome,vitorias){
+function calculadoraDeRanking(vitorias){
     let rank="";
     if(vitorias<10){
         rank="Ferro";
@@ -28,7 +28,7 @@ function calculadoraDeRanking(nome,vitorias){
 }
 
 for(let i = 0;i<historico.length;i++){
-    let rank =calculadoraDeRanking(historico[i].nome,historico[i].xp);
+    let rank =calculadoraDeRanking(historico[i].jogos.v);
 
-    console.log(` ${rank}`);
+    console.log(`O Herói tem de saldo de **${historico[i].jogos.v}** está no nível de **${rank}**`);
 }
